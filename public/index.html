@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видеохостинг</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📹 Загрузка и просмотр видео</h1>
+        
+        <div class="upload-section">
+            <h2>Загрузить новое видео</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="videoInput" accept="video/*" required>
+                <button type="submit">Загрузить</button>
+            </form>
+            <div id="uploadStatus" class="status"></div>
+        </div>
+
+        <div class="videos-section">
+            <h2>Доступные видео</h2>
+            <div id="videoList" class="video-list">
+                <p>Загрузка списка...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
